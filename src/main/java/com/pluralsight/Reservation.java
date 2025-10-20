@@ -6,6 +6,11 @@ public class Reservation {
     private int numberOfNights;
     private boolean isWeekend;
 
+    public Reservation(String roomType, int numberOfNights, boolean isWeekend) {
+        this.roomType = roomType;
+        this.numberOfNights = numberOfNights;
+        this.isWeekend = isWeekend;
+    }
 
     public String getRoomType() {
         return roomType;
@@ -55,8 +60,18 @@ public class Reservation {
         }
         }
 
-    public double getReservationTotal(){
+    public double getReservationTotal() {
         return getPrice() * numberOfNights;
+    }
+
+    @Override
+    public String toString() {
+        return "Reservation{" +
+                "roomType='" + roomType + '\'' +
+                ", numberOfNights=" + numberOfNights +
+                ", isWeekend=" + isWeekend +
+                ", getReservationTotal()=" + getReservationTotal() +
+                '}';
 
     }
 }
