@@ -21,6 +21,9 @@ public class Main {
         for (Room r : rooms){
             System.out.println(r);
         }
+    //------------------
+
+        ArrayList<Employee> employees = new ArrayList<>();
 
     }
 }
