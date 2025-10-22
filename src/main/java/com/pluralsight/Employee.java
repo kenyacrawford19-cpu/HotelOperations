@@ -10,6 +10,9 @@ public class Employee {
     private float hoursWorked;
     private double payRate;
 
+    public Employee(int i, String matt, String it, int i1, int i2) {
+    }
+
     public int Employee (int employeeId, String name, String department, double payRate, float hoursWorked) {
         this.employeeID = employeeId;
         this.name = name;

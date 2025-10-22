@@ -52,4 +52,19 @@ public class Room {
                 "}";
 
     }
+
+    public void checkIn() {
+      this.isDirty = true;
+      this.isOccupied = true;
+    }
+
+    public void cleanRoom() {
+        if (!isOccupied ){
+            this.isDirty = false;
+        }
+    }
+
+    public void checkout() {
+        this.isOccupied = false;
+    }
 }
